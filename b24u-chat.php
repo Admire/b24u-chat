@@ -1,12 +1,13 @@
 <?php
 /*
 Plugin Name: B24U Chat Widget
-Plugin URI: https://b24u.com
-Description: AI-powered chat widget. Installs in one click — all settings managed remotely.
+Plugin URI: https://github.com/Admire/b24u-chat
+Description: AI-powered chat widget with remote configuration
 Version: 1.0.0
 Author: B24U
 Author URI: https://b24u.com
 License: GPL v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: b24u-chat
 */
 

@@ -3,7 +3,7 @@
 Plugin Name: B24U Chat Widget
 Plugin URI: https://github.com/Admire/b24u-chat
 Description: AI-powered chat widget with remote configuration
-Version: 1.0.1
+Version: 1.0.2
 Author: B24U
 Author URI: https://b24u.com
 License: GPL v2 or later
@@ -237,7 +237,7 @@ function b24u_render_widget() {
 		'b24u-widget',
 		'https://i.b24u.com/' . esc_attr($domain),
 		[],
-		null,
+		'1.0.0',
 		true
 	);
 	
@@ -245,6 +245,13 @@ function b24u_render_widget() {
 		'b24u-widget',
 		'if(window.B24U){B24U.init(window.B24UConfig);}'
 	);
+}
+
+// Register inline script handle
+add_action('wp_enqueue_scripts', 'b24u_register_scripts');
+function b24u_register_scripts() {
+	wp_register_script('b24u-widget-config', '', [], '1.0.0', true);
+	wp_enqueue_script('b24u-widget-config');
 }
 
 // Register inline script handle

@@ -8,7 +8,7 @@ Author: B24U
 Author URI: https://b24u.com
 License: GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: b24u-chat
+Text Domain: b24u-chat-widget
 */
 
 if (!defined('ABSPATH')) exit;
